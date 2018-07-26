@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionName="shareNames">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/func_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorGray"
+        android:background="@color/colorOrange"
+        app:tabPadding="1dp"
+        app:tabMaxWidth="80dp"
+        app:tabMinWidth="80dp"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/func_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/func_tabLayout">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

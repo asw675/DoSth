@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="shareNames"
+    android:id="@+id/chat_layout">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/chat_edit">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+        <EditText
+            android:id="@+id/chat_edit"
+            android:background="@drawable/edit_text_style_1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="60dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="发送"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chat_edit"
+        app:layout_constraintTop_toBottomOf="@+id/chat_recy" />
+
+</android.support.constraint.ConstraintLayout>

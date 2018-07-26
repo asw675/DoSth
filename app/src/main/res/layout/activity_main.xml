@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:transitionName="shareNames"
+    android:id="@+id/main_layout">
+
+    <TextView
+        android:id="@+id/say"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:letterSpacing="0.3"
+        android:id="@+id/TodayThing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/say"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/to_func"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="功能大全"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/to_chat"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="和我聊聊"
+        android:id="@+id/to_chat"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+</android.support.constraint.ConstraintLayout>
